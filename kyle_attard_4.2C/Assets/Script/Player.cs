@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
 
     [SerializeField] float moveSpeed = 10f;
+    [SerializeField] float padding = 0.5f;
 
     float xMin, xMax;
 
@@ -31,8 +32,8 @@ public class Player : MonoBehaviour
     private void SetUpMoveBounderies()
     {
         Camera myCamera = Camera.main;
-        xMin = myCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x;
-        xMax = myCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x;
+        xMin = myCamera.ViewportToWorldPoint(new Vector3(0, 0, 0)).x + padding;
+        xMax = myCamera.ViewportToWorldPoint(new Vector3(1, 0, 0)).x - padding;
 
     }
 
