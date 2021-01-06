@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3187727729170245964}
   - component: {fileID: 8513067366860190835}
   - component: {fileID: -4111422087095172782}
+  - component: {fileID: -495575453445088578}
+  - component: {fileID: -2595195933324953665}
   m_Layer: 0
   m_Name: rock3
   m_TagString: Untagged
@@ -99,4 +101,52 @@ MonoBehaviour:
   - {fileID: 4455298677664646147, guid: 27f62d6396a753443ac43c9d5e724d51, type: 3}
   - {fileID: 8155499637252965561, guid: ae92e1d375ab0f941aac4a3e873f481e, type: 3}
   - {fileID: 5949888369564987162, guid: 8baa63f1eda7fa54591b1ff60a8ae9ce, type: 3}
-  MoveSpeed: 5
+  waveConfig: {fileID: 0}
+--- !u!60 &-495575453445088578
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675753417800935453}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.77, y: 0.46}
+    newSize: {x: 0.77, y: 0.46}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.385, y: 0.14999999}
+      - {x: 0.325, y: 0.19}
+      - {x: 0.005, y: 0.22999999}
+      - {x: -0.285, y: 0.22999999}
+      - {x: -0.385, y: 0.11}
+      - {x: -0.385, y: -0.22999999}
+      - {x: 0.105, y: -0.22999999}
+      - {x: 0.21499999, y: -0.21}
+      - {x: 0.255, y: -0.22999999}
+      - {x: 0.385, y: -0.22999999}
+--- !u!114 &-2595195933324953665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 675753417800935453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb59b282128ff2d408298981fa8f8789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3

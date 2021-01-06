@@ -5,15 +5,22 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] List<WaveConfig> waveConfigsList;
+    [SerializeField] bool looping = false;
 
     int startingWave = 0;
 
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
-        var currentWave = waveConfigsList[startingWave];
-        StartCoroutine(SpawnAllEnemiesInWave(currentWave));
+        do
+        {
+            yield return StartCoroutine(SpawnAllWaves());
+        }
+        while (looping);
+        
+
+        
         
     }
 
@@ -23,14 +30,32 @@ public class EnemySpawner : MonoBehaviour
         
     }
 
-    private IEnumerator SpawnAllEnemiesInWave(WaveConfig waveConfig)
+    private IEnumerator SpawnAllEnemiesInWave(WaveConfig waveToSpawn)
     {
-        Instantiate(
-            waveConfig.GetTruckPrefab(),
-            waveConfig.GetWaypoints()[0].transform.position,
-            Quaternion.identity);
-        yield return new WaitForSeconds(waveConfig.GetTimeBetweenSpawns());
+        for (int enemyCount = 1; enemyCount <= waveToSpawn.GetNumberOfEnemies(); enemyCount++)
+        {
+            var newEnemy = Instantiate(
+                waveToSpawn.GetTruckPrefab(),
+                waveToSpawn.GetWaypoints()[0].transform.position,
+                Quaternion.identity);
+            newEnemy.GetComponent<EnemyPathing>().SetWaveConfig(waveToSpawn);
+
+
+            yield return new WaitForSeconds(waveToSpawn.GetTimeBetweenSpawns());
+
+
+
+        }
+        
 
             
+    }
+
+    private IEnumerator SpawnAllWaves()
+    {
+        foreach(WaveConfig currentWave in waveConfigsList)
+        {
+            yield return StartCoroutine(SpawnAllEnemiesInWave(currentWave));
+        }
     }
 }

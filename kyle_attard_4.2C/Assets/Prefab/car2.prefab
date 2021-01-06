@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 2734266050321035102}
   - component: {fileID: 360963100584831893}
   - component: {fileID: 1929830584575790367}
+  - component: {fileID: 5624349624772037278}
+  - component: {fileID: 4693736481103323227}
+  - component: {fileID: -574897219504220176}
   m_Layer: 0
   m_Name: car2
   m_TagString: Untagged
@@ -27,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4914960335018619090}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3785, y: 0.2718, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,4 +102,89 @@ MonoBehaviour:
   - {fileID: 4077809740689524089, guid: f74d1284e033e5e41b2400801b3dad3f, type: 3}
   - {fileID: 4552029983296571719, guid: d746da420d5d6bd4799540c92fb48d7b, type: 3}
   - {fileID: 8063035010640662277, guid: 924823dacf4b8c0458ddd1bab1ea4de9, type: 3}
-  MoveSpeed: 2.5
+  waveConfig: {fileID: 0}
+--- !u!60 &5624349624772037278
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4914960335018619090}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.78, y: 3.32}
+    newSize: {x: 1.78, y: 3.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.84999996, y: -1.0699999}
+      - {x: 0.83, y: -0.51}
+      - {x: 0.81, y: -0.47}
+      - {x: 0.78999996, y: 0.04}
+      - {x: 0.89, y: 0.04}
+      - {x: 0.89, y: 0.21}
+      - {x: 0.79999995, y: 0.26999998}
+      - {x: 0.84, y: 0.81}
+      - {x: 0.84999996, y: 1.15}
+      - {x: 0.77, y: 1.43}
+      - {x: 0.44, y: 1.66}
+      - {x: -0.35999998, y: 1.66}
+      - {x: -0.65999997, y: 1.53}
+      - {x: -0.81, y: 1.28}
+      - {x: -0.84999996, y: 1.06}
+      - {x: -0.83, y: 0.65}
+      - {x: -0.79999995, y: 0.25}
+      - {x: -0.89, y: 0.17}
+      - {x: -0.89, y: 0.07}
+      - {x: -0.82, y: 0.04}
+      - {x: -0.84999996, y: -0.48}
+      - {x: -0.84999996, y: -1.05}
+      - {x: -0.81, y: -1.36}
+      - {x: -0.78999996, y: -1.4399999}
+      - {x: -0.62, y: -1.5799999}
+      - {x: -0.39999998, y: -1.64}
+      - {x: 0.14, y: -1.64}
+      - {x: 0.44, y: -1.61}
+      - {x: 0.69, y: -1.51}
+      - {x: 0.78999996, y: -1.4399999}
+--- !u!114 &4693736481103323227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4914960335018619090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29a50b02e7d8bf841a4f66cf4c05f766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 1
+  enemyBulletPrefab: {fileID: 1863323412757836237, guid: b0549cc0a35d04a46b7b8fed36efe0f5, type: 3}
+  enemyLaserSpeed: 0.3
+--- !u!114 &-574897219504220176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4914960335018619090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb59b282128ff2d408298981fa8f8789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 4

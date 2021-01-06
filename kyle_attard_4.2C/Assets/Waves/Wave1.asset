@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc5563258b0d10b4c8da6631bc296ce9, type: 3}
   m_Name: Wave1
   m_EditorClassIdentifier: 
-  truckPrefab: {fileID: 5058206770619346317, guid: ba1cfa8603cebce41aaba38508edbcbd, type: 3}
-  pathPrefab: {fileID: 6337621321410827106, guid: 1f4381e27296e9d42b53826301b3bccf, type: 3}
+  truckPrefab: {fileID: 7668910885009272872, guid: 6d202204e6e76d04b9201d45a6b6cc63, type: 3}
+  pathPrefab: {fileID: 7909723157892870778, guid: ac318eaf1e62a2147a5605ec88cf470a, type: 3}
   timeBetweenSpawns: 2
   spawnRandomFactor: 1
   numberOfEnemies: 2

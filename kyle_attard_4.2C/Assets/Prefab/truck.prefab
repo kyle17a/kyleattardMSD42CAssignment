@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2027576918970722942}
   - component: {fileID: 5657494408109402344}
   - component: {fileID: 1902050294606189567}
+  - component: {fileID: -556835473626035361}
+  - component: {fileID: -5970005347992856738}
   m_Layer: 0
   m_Name: truck
   m_TagString: Untagged
@@ -99,5 +101,77 @@ MonoBehaviour:
   - {fileID: 8276472651274341884, guid: 2e50163e059f51545909e38150557c37, type: 3}
   - {fileID: 805356844787454461, guid: 351def7acd1d97a4ea2ecacc1f77b103, type: 3}
   - {fileID: 21712058745230691, guid: bfaf2230909f85a42b75d3bf492b8839, type: 3}
-  MoveSpeed: 4
   waveConfig: {fileID: 11400000, guid: 3c9815f68ab00c04ca3509f05d5109b6, type: 2}
+--- !u!60 &-556835473626035361
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5058206770619346317}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.73, y: 2.83}
+    newSize: {x: 0.73, y: 2.83}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.36499998, y: -1.415}
+      - {x: 0.36499998, y: -0.015}
+      - {x: 0.355, y: 0.72499996}
+      - {x: 0.33499998, y: 0.745}
+      - {x: -0.36499998, y: 0.745}
+      - {x: -0.36499998, y: -1.415}
+      - {x: -0.275, y: -1.415}
+      - {x: -0.265, y: -1.395}
+      - {x: 0.085, y: -1.415}
+    - - {x: -0.235, y: 1.385}
+      - {x: -0.36499998, y: 1.3149999}
+      - {x: -0.36499998, y: 0.775}
+      - {x: 0.315, y: 0.775}
+      - {x: 0.315, y: 1.285}
+      - {x: 0.16499999, y: 1.385}
+    - - {x: -0.36499998, y: 1.415}
+      - {x: -0.36499998, y: 1.3349999}
+      - {x: -0.285, y: 1.3349999}
+      - {x: -0.24499999, y: 1.355}
+      - {x: -0.24499999, y: 1.395}
+      - {x: -0.255, y: 1.415}
+    - - {x: 0.285, y: 1.415}
+      - {x: 0.225, y: 1.415}
+      - {x: 0.195, y: 1.405}
+      - {x: 0.185, y: 1.385}
+      - {x: 0.185, y: 1.3349999}
+      - {x: 0.295, y: 1.3349999}
+      - {x: 0.305, y: 1.355}
+      - {x: 0.305, y: 1.405}
+    - - {x: 0.13499999, y: 1.375}
+      - {x: 0.155, y: 1.355}
+      - {x: 0.185, y: 1.365}
+      - {x: 0.185, y: 1.395}
+      - {x: 0.16499999, y: 1.415}
+      - {x: 0.13499999, y: 1.405}
+--- !u!114 &-5970005347992856738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5058206770619346317}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb59b282128ff2d408298981fa8f8789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 5

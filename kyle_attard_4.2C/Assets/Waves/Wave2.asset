@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc5563258b0d10b4c8da6631bc296ce9, type: 3}
   m_Name: Wave2
   m_EditorClassIdentifier: 
-  truckPrefab: {fileID: 675753417800935453, guid: f3ed10e4e7cd8564ab25ade3b29e9a58, type: 3}
-  pathPrefab: {fileID: 7909723157892870778, guid: ac318eaf1e62a2147a5605ec88cf470a, type: 3}
+  truckPrefab: {fileID: 6854212513874840660, guid: 1a6355c98455b0b4b95c0c16bf8e205d, type: 3}
+  pathPrefab: {fileID: 4831854021366417406, guid: a0b81827b29b9a645ba2172dbe0b1f11, type: 3}
   timeBetweenSpawns: 2
   spawnRandomFactor: 1
-  numberOfEnemies: 2
+  numberOfEnemies: 1
   enemyMoveSpeed: 4
