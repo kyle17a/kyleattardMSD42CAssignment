@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5563258b0d10b4c8da6631bc296ce9, type: 3}
+  m_Name: Wave2
+  m_EditorClassIdentifier: 
+  truckPrefab: {fileID: 675753417800935453, guid: f3ed10e4e7cd8564ab25ade3b29e9a58, type: 3}
+  pathPrefab: {fileID: 7909723157892870778, guid: ac318eaf1e62a2147a5605ec88cf470a, type: 3}
+  timeBetweenSpawns: 2
+  spawnRandomFactor: 1
+  numberOfEnemies: 2
+  enemyMoveSpeed: 4

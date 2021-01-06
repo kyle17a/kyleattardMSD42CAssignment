@@ -100,3 +100,4 @@ MonoBehaviour:
   - {fileID: 805356844787454461, guid: 351def7acd1d97a4ea2ecacc1f77b103, type: 3}
   - {fileID: 21712058745230691, guid: bfaf2230909f85a42b75d3bf492b8839, type: 3}
   MoveSpeed: 4
+  waveConfig: {fileID: 11400000, guid: 3c9815f68ab00c04ca3509f05d5109b6, type: 2}
