@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    //a variable that can be edited from Unity 
 
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 0.5f;

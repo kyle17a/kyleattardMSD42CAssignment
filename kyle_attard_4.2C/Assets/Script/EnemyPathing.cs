@@ -10,6 +10,8 @@ public class EnemyPathing : MonoBehaviour
 
     [SerializeField] WaveConfig waveConfig;
 
+    //saves the waypoint in which we want the enemy to go
+
     int waypointIndex = 0;
 
     // Start is called before the first frame update
