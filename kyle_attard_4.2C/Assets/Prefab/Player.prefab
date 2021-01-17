@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2696937283068818251}
   - component: {fileID: 2696937283068818248}
   - component: {fileID: 2696937283068818250}
-  - component: {fileID: -4791403898186158497}
+  - component: {fileID: -5023910260637879436}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -99,7 +99,7 @@ MonoBehaviour:
   health: 50
   moveSpeed: 10
   padding: 0.7
---- !u!60 &-4791403898186158497
+--- !u!60 &-5023910260637879436
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -109,7 +109,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
