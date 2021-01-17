@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 6673982528536939986}
   - component: {fileID: 6591454189078772766}
   - component: {fileID: 4404558639671846930}
-  - component: {fileID: 3111772492074591590}
   - component: {fileID: 5319243874541047749}
+  - component: {fileID: -2329560439389426680}
   m_Layer: 0
   m_Name: cone
   m_TagString: Untagged
@@ -102,7 +102,20 @@ MonoBehaviour:
   - {fileID: 4879764970714501963, guid: 63b12e1ad4d36e14c992bd5bbcd52d96, type: 3}
   - {fileID: 361596499387840666, guid: f88137ae5d8220d4683790de82dd6afd, type: 3}
   waveConfig: {fileID: 0}
---- !u!60 &3111772492074591590
+--- !u!114 &5319243874541047749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7668910885009272872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb59b282128ff2d408298981fa8f8789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+--- !u!60 &-2329560439389426680
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,7 +125,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -194,16 +207,3 @@ PolygonCollider2D:
       - {x: 0.235, y: 0.765}
       - {x: 0.235, y: 0.91499996}
       - {x: 0.195, y: 1.095}
---- !u!114 &5319243874541047749
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7668910885009272872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb59b282128ff2d408298981fa8f8789, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1

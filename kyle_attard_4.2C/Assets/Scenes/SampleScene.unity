@@ -381,6 +381,10 @@ PrefabInstance:
       propertyPath: padding
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2696937283068818250, guid: 7f5ea089f2e03714a9f6f32134fcfa44, type: 3}
+      propertyPath: health
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 2696937283068818251, guid: 7f5ea089f2e03714a9f6f32134fcfa44, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.13

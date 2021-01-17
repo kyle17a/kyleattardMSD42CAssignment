@@ -5,11 +5,13 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     //a variable that can be edited from Unity 
-
+    [SerializeField] float health = 50f;
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 0.5f;
 
     float xMin, xMax;
+
+ 
 
 
 
@@ -29,6 +31,25 @@ public class Player : MonoBehaviour
         Move();
         
     }
+
+    private void OnTriggerEnter2D(Collider2D otherObject)
+    {
+        DamageDealer DmgDealer = otherObject.gameObject.GetComponent<DamageDealer>();
+        Hit(DmgDealer);
+
+    }
+
+    private void Hit(DamageDealer DmgDealer)
+    {
+        health -= DmgDealer.GetDamage();
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+
 
     private void SetUpMoveBounderies()
     {
