@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] float enemyLaserSpeed = 0.3f;
 
+    [SerializeField] AudioClip enemyDeathSound;
+    [SerializeField] [Range(0, 1)] float enemyDeathSoundVolume = 0.80f;
+
     // Start is called before the first frame update
     void Start()
     {

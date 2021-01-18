@@ -9,6 +9,13 @@ public class Player : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float padding = 0.5f;
 
+
+    [SerializeField] AudioClip playerHitSound;
+    [SerializeField] [Range(0, 1)] float playerHitSoundVolume = 1f;
+
+    [SerializeField] GameObject explosionVFX;
+    [SerializeField] float explosionDuration = 1f;
+
     float xMin, xMax;
 
  
@@ -36,17 +43,26 @@ public class Player : MonoBehaviour
     {
         DamageDealer DmgDealer = otherObject.gameObject.GetComponent<DamageDealer>();
         Hit(DmgDealer);
-
+        Destroy(otherObject.gameObject);
     }
 
     private void Hit(DamageDealer DmgDealer)
     {
         health -= DmgDealer.GetDamage();
+        AudioSource.PlayClipAtPoint(playerHitSound, Camera.main.transform.position, playerHitSoundVolume);
+
+        //explosion particles
+        GameObject explosion = Instantiate(explosionVFX, transform.position, Quaternion.identity);
+
+        Destroy(explosion, explosionDuration);
 
         if (health <= 0)
         {
             Die();
+
         }
+        
+        
     }
 
     private void Die()

@@ -99,6 +99,10 @@ MonoBehaviour:
   health: 50
   moveSpeed: 10
   padding: 0.7
+  playerHitSound: {fileID: 8300000, guid: 5c504293143d4ff45885087a0fa132d8, type: 3}
+  playerHitSoundVolume: 0.8
+  explosionVFX: {fileID: 5681765026578323795, guid: 4edf9df2e4160ac42ab184e0197f1055, type: 3}
+  explosionDuration: 1
 --- !u!60 &-5023910260637879436
 PolygonCollider2D:
   m_ObjectHideFlags: 0
