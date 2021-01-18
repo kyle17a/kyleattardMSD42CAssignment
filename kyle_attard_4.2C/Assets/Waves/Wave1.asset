@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   truckPrefab: {fileID: 7668910885009272872, guid: 6d202204e6e76d04b9201d45a6b6cc63, type: 3}
   pathPrefab: {fileID: 7909723157892870778, guid: ac318eaf1e62a2147a5605ec88cf470a, type: 3}
-  timeBetweenSpawns: 2
+  timeBetweenSpawns: 1
   spawnRandomFactor: 1
-  numberOfEnemies: 1
+  numberOfEnemies: 2
   enemyMoveSpeed: 4
