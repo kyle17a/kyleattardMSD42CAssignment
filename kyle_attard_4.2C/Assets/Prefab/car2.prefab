@@ -176,6 +176,8 @@ MonoBehaviour:
   maxTimeBetweenShots: 1
   enemyBulletPrefab: {fileID: 1863323412757836237, guid: b0549cc0a35d04a46b7b8fed36efe0f5, type: 3}
   enemyLaserSpeed: 0.3
+  enemyDeathSound: {fileID: 0}
+  enemyDeathSoundVolume: 0.8
 --- !u!114 &-574897219504220176
 MonoBehaviour:
   m_ObjectHideFlags: 0
